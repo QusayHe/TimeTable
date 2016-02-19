@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="wzu.hq.timetable.MainActivity" >   
+      <item
+        android:id="@+id/updateExcel"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/update" 
+        android:title="更新Excel"/>
+       <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/settings" 
+        android:title="设置"/>
+</menu>

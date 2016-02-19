@@ -1,0 +1,210 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wzu.hq.timetable.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/empty"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_text_view_bg"
+            android:text="@string/empty" />
+
+        <TextView
+            android:id="@+id/monday_course"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/empty"
+            android:background="@drawable/course_text_view_bg"
+            android:text="@string/mon" />
+
+        <TextView
+            android:id="@+id/tuesday_course"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/monday_course"
+            android:background="@drawable/course_text_view_bg"
+            android:text="@string/tue" />
+
+        <TextView
+            android:id="@+id/wednesday_course"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tuesday_course"
+            android:background="@drawable/course_text_view_bg"
+            android:text="@string/wen" />
+
+        <TextView
+            android:id="@+id/thursday_course"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wednesday_course"
+            android:background="@drawable/course_text_view_bg"
+            android:text="@string/thu" />
+
+        <TextView
+            android:id="@+id/friday_course"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thursday_course"
+            android:background="@drawable/course_text_view_bg"
+            android:text="@string/fri" />
+
+        <TextView
+            android:id="@+id/saturday_course"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/friday_course"
+            android:background="@drawable/course_text_view_bg"
+            android:text="@string/sta" />
+
+        <TextView
+            android:id="@+id/sunday_course"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/saturday_course"
+            android:background="@drawable/course_table_last_colum"
+            android:text="@string/sun" />
+
+        <!--
+        周一课程
+          <TextView
+            android:id="@+id/Mon1"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/monday_course"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon2"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon1"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon3"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon2"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon4"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon3"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon5"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon4"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon6"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon5"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon7"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon6"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon8"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon7"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon9"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon8"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon10"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon9"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon11"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon10"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/Mon12"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mon11"
+            android:background="@drawable/course_text_view_bg"
+            android:text="" />
+        -->
+
+        <ScrollView
+            android:id="@+id/scroll_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/course_table"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>
